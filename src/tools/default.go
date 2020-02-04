@@ -6,9 +6,9 @@ import ( "io/ioutil" )
 var title = "Tools"
 
 /** @exports */
-func Default( s string ) ( string , error ) {
-  var e error
-  var o [] byte
-  if o , e = ioutil.ReadFile( s ) ; e != nil { return "" , e }
-  return string( o ) , nil
+func Default( o string ) ( r string , e error ) {
+  var b [] byte
+  if b , e = ioutil.ReadFile( o ) ; e != nil { return }
+  r = string( b )
+  return
 }

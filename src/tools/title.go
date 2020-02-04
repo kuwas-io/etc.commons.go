@@ -4,9 +4,9 @@ import ( "strings" )
 
 /** @parameters */
 /** @exports */
-func Title( s [] string , t bool ) string {
-  var d = " »"
-  var o = strings.Join( s , d )
-  if t { o += d }
-  return o
+func Title( o [] string , t bool ) ( r string ) {
+  var d = " » "
+  r = strings.Join( o , d )
+  if t { r += d }
+  return
 }
